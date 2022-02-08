@@ -2,8 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-  max-width:1140px;
-  margin: 0 auto;
-  padding:0px 10px;
+@layer components {
+  
+  .container{
+  @apply max-w-5xl my-0 mx-auto bg-error px-2;
+  }
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
 }
+
+
+@font-face {
+  font-family: 'Spartan';
+  src: local('Spartan SemiBold'), local('Spartan-SemiBold'),
+      url('assets/fonts/Spartan-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/Spartan-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: local('Spartan Medium'), local('Spartan-Medium'),
+      url('assets/fonts/Spartan-Medium.woff2') format('woff2'),
+      url('assets/fonts/Spartan-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: local('Spartan Bold'), local('Spartan-Bold'),
+      url('assets/fonts/Spartan-Bold.woff2') format('woff2'),
+      url('assets/fonts/Spartan-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: local('Spartan Regular'), local('Spartan-Regular'),
+      url('assets/fonts/Spartan-Regular.woff2') format('woff2'),
+      url('assets/fonts/Spartan-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+

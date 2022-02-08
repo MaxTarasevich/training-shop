@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Header = () => {
-  return <header className='py-20 bg-slate-600'>
-      <div className="container">
+  return <header className='py-10 bg-error font-spartan font-bold'>
+      <div className="container bg-white-800">
           header
       </div>
   </header>;

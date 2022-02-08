@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.362e551f.css",
-    "main.js": "/training-shop/static/js/main.0c2b8327.js",
+    "main.css": "/training-shop/static/css/main.c875dab3.css",
+    "main.js": "/training-shop/static/js/main.da63bf1a.js",
+    "static/media/Spartan-SemiBold.woff": "/training-shop/static/media/Spartan-SemiBold.c470756dd80fdb38766a.woff",
+    "static/media/Spartan-Regular.woff": "/training-shop/static/media/Spartan-Regular.55691303914bbb69664e.woff",
+    "static/media/Spartan-Bold.woff": "/training-shop/static/media/Spartan-Bold.51414b1e495136708892.woff",
+    "static/media/Spartan-Medium.woff": "/training-shop/static/media/Spartan-Medium.6b7f1667c2fd6c73faaf.woff",
+    "static/media/Spartan-SemiBold.woff2": "/training-shop/static/media/Spartan-SemiBold.786c1e073aa2c9440ac5.woff2",
+    "static/media/Spartan-Regular.woff2": "/training-shop/static/media/Spartan-Regular.c53622e276a7407ad3c0.woff2",
+    "static/media/Spartan-Bold.woff2": "/training-shop/static/media/Spartan-Bold.d154ae57aea03aa0f3a2.woff2",
+    "static/media/Spartan-Medium.woff2": "/training-shop/static/media/Spartan-Medium.b9ed0fa234420450f979.woff2",
     "index.html": "/training-shop/index.html",
-    "main.362e551f.css.map": "/training-shop/static/css/main.362e551f.css.map",
-    "main.0c2b8327.js.map": "/training-shop/static/js/main.0c2b8327.js.map"
+    "main.c875dab3.css.map": "/training-shop/static/css/main.c875dab3.css.map",
+    "main.da63bf1a.js.map": "/training-shop/static/js/main.da63bf1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.362e551f.css",
-    "static/js/main.0c2b8327.js"
+    "static/css/main.c875dab3.css",
+    "static/js/main.da63bf1a.js"
   ]
 }

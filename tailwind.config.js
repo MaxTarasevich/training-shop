@@ -7,6 +7,17 @@ module.exports = {
     fontFamily:{
       'spartan':['Spartan']
     },
+    fontSize:{
+      'title':['36px','42px'],
+      'title1':['26px','36px'],
+      'title2':['22px','30px'],
+      'title3':['16px','24px'],
+      'title4':['14px','22px'],
+      'subtitle':['12px','18px'],
+      'body':['14px','22px'],
+      'small':['11px','18px'],
+      'button':['13px','15px']
+    },
     colors: {
       'dark':'#121212',
       'white':'#FFFFFF',

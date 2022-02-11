@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Advantage from './Advantage';
+
 import MainBanner from '../assets/images/main__banner.jpg';
 import bannerWomen from '../assets/images/main__banner-women.jpg';
 import bannerMen from '../assets/images/main__banner-men.jpg';
@@ -8,7 +10,7 @@ import bannerAccess from '../assets/images/main__banner-accessories.jpg';
 import Arrow from '../SVGcomponent/Arrow';
 
 const Banner = () => {
-  return <div className="banner border-y-2 border-solid border-y-gr-white py-8">
+  return <section className="banner border-y-2 border-solid border-y-gr-white py-8">
       <div className="container flex justify-between">
         <div className="banner__main max-w-[540px] relative">
                 <img src={MainBanner} alt="main banner" />
@@ -61,7 +63,9 @@ const Banner = () => {
         </div>
 
       </div>
-  </div>;
+
+        <Advantage />
+  </section>;
 };
 
 export default Banner;

@@ -17,7 +17,7 @@
     @apply max-w-6xl my-0 mx-auto px-2;
   }
   .banner__title{
-    @apply py-6 px-8 absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 bg-white text-center font-semibold text-dark uppercase;
+    @apply py-6 px-8 absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 bg-white text-center font-semibold text-dark uppercase cursor-pointer;
   }
   .banner__main-arrows{
     @apply  absolute top-[50%] right-6 bg-white rounded-full w-10 h-10 flex justify-center items-center cursor-pointer -translate-y-2/4;

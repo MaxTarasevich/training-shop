@@ -7,17 +7,19 @@ import Globe from '../SVGcomponent/Globe';
 import User from '../SVGcomponent/User';
 import Bag from '../SVGcomponent/Bag';
 
+import { Link, NavLink } from 'react-router-dom';
+
 const Navigation = () => {
   return <nav className='nav'>
     <div className="container pb-5 pt-4  flex justify-between">
-      <a className='nav__logo' href="home">
+      <Link className='nav__logo' to="/training-shop">
         <img src={Logo} alt="Logo" />
-      </a>
+      </Link>
 
       <ul className='nav__menu flex space-x-4 text-title4 text-dark'>
         <li><a href="about">About Us</a></li>
-        <li><a href="women">Women</a></li>
-        <li><a href="men">Men</a></li>
+        <li><NavLink to="/training-shop/women">Women</NavLink></li>
+        <li><NavLink to="/training-shop/men">Men</NavLink></li>
         <li><a href="beauty">Beauty</a></li>
         <li><a href="accessories">Accessories</a></li>
         <li><a href="blog">Blog</a></li>

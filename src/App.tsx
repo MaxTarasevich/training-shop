@@ -6,6 +6,7 @@ import Cataloge from "./components/Cataloge";
 import womanArr from "./data/women_card";
 import manArr from "./data/men_card";
 import Advertising from "./components/Advertising";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Cataloge title='WOMEN’S'cardData={womanArr}/>
      <Cataloge title='MEN’S'cardData={manArr}/>
      <Advertising />
+     <Blog />
     </div>
   );
 }

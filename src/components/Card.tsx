@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Star from '../SVGcomponent/Star'
 
@@ -17,7 +18,7 @@ while (rate) {
     rate--
 }
 
-  return <a className='card block text-body' href='card'>
+  return <Link className='card block text-body' to='/training-shop/product'>
         <div className="card__image">
             <img src={image} alt="" />
         </div>
@@ -35,7 +36,7 @@ while (rate) {
             </div>
         </div>
 
-  </a>;
+  </Link>;
 };
 
 export default Card;

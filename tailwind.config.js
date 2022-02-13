@@ -16,7 +16,7 @@ module.exports = {
       'subtitle':['12px','18px'],
       'body':['14px','22px'],
       'small':['11px','18px'],
-      'button':['13px','15px']
+      'button':['13px','15px'],
     },
     colors: {
       'dark':'#121212',
@@ -30,6 +30,9 @@ module.exports = {
       'grey-dark':'#9C9C9C',
       'dark-shadow':'rgba(18,18,18, 0.4)',
       'white-800':'rgba(255,255,255, 0.8)',
+      'grad-top':'#F3F2F2',
+      'grad-bottom':'#DCDBDB',
+
     }
   },
   plugins: [],

@@ -9,7 +9,7 @@ import SocialLinks from './SocialLinks';
 
 
 const Header = () => {
-  return <header className='header py-1 bg-dark'>
+  return <header className='header py-1 bg-dark' data-test-id="header">
       <div className="container flex justify-between">
           <ul className="header__contacts flex text-white-800 tracking-wide text-small font-medium">
             <li className='mr-8'>

@@ -26,7 +26,7 @@ import Star from '../SVGcomponent/Star'
 
 const ProductCard = () => {
   return (
-    <section className='productCard pt-8'>
+    <section className='productCard pt-8 ' data-test-id="product-page-/training-shop/product">
         <div className="container flex justify-between gap-x-8">
             <div className="productCard__slider flex gap-x-4">
                 <div className="productCard__preview flex flex-col gap-y-4">

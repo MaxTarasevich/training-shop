@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className="App">
+    <main className="App" data-test-id="app">
       <Header />
       <Navigation />
      

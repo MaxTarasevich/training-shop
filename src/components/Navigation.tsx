@@ -10,16 +10,16 @@ import Bag from '../SVGcomponent/Bag';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
-  return <nav className='nav'>
+  return <nav className='nav' data-test-id="menu">
     <div className="container pb-5 pt-4  flex justify-between">
-      <Link className='nav__logo' to="/training-shop">
+      <Link className='nav__logo' to="/training-shop" data-test-id="header-logo-link">
         <img src={Logo} alt="Logo" />
       </Link>
 
       <ul className='nav__menu flex space-x-4 text-title4 text-dark'>
         <li><a href="about">About Us</a></li>
-        <li><NavLink to="/training-shop/women">Women</NavLink></li>
-        <li><NavLink to="/training-shop/men">Men</NavLink></li>
+        <li><NavLink to="/training-shop/women" data-test-id="menu-link-/training-shop/women">Women</NavLink></li>
+        <li><NavLink to="/training-shop/men" data-test-id="menu-link-/training-shop/men">Men</NavLink></li>
         <li><a href="beauty">Beauty</a></li>
         <li><a href="accessories">Accessories</a></li>
         <li><a href="blog">Blog</a></li>

@@ -52,7 +52,7 @@ const FooterCard: FC<FooterCardProps> = ({title,links, contacts}) => {
             :<ul className="footer__list">
             {
                 links.map((link, index) => {
-                    return <li className='py-2 text-dark text-opacity-80' key={index}><a href={link}>{link}</a></li>
+                    return <li className='py-2 text-dark text-opacity-80' key={index}><a href={link} data-test-id={`footer-nav-link-${link}`}>{link}</a></li>
                 })
             }
         </ul>

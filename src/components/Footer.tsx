@@ -24,7 +24,7 @@ const Footer = () => {
     }
 
   return (
-    <footer className='footer'>
+    <footer className='footer' data-test-id="footer">
         
             <div className="footer__subscribe py-3 text-white bg-dark">
                 <div className="container flex justify-between items-center text-subtitle">

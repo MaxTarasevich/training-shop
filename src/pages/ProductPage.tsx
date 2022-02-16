@@ -1,5 +1,6 @@
 import React from 'react'
 import Panel from '../components/Panel'
+import ProductCard from '../components/ProductCard'
 import RelatedProd from '../components/RelatedProd'
 
 const cardInfo = {
@@ -13,6 +14,7 @@ const ProductPage = () => {
   return (
       <> 
       <Panel title="Women's tracksuit Q109" path='/training-shop/women' cardInfo={cardInfo} />
+      <ProductCard />
       <RelatedProd />
       </>
    

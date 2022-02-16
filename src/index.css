@@ -22,6 +22,12 @@
   .banner__main-arrows{
     @apply  absolute top-[50%] right-6 bg-white rounded-full w-10 h-10 flex justify-center items-center cursor-pointer -translate-y-2/4;
   }
+  .productCard__control-main{
+    @apply w-10 h-10 flex justify-center items-center rounded-full bg-white absolute top-2/4 -translate-y-2/4 cursor-pointer;
+  }
+  .size__item{
+    @apply w-10 h-10 my-4 bg-gr-white flex justify-center items-center cursor-pointer;
+  }
 }
 
 @font-face {

@@ -18,8 +18,8 @@ const Navigation = () => {
 
       <ul className='nav__menu flex space-x-4 text-title4 text-dark'>
         <li><a href="about">About Us</a></li>
-        <li><NavLink to="/training-shop/women" data-test-id="menu-link-/training-shop/women">Women</NavLink></li>
-        <li><NavLink to="/training-shop/men" data-test-id="menu-link-/training-shop/men">Men</NavLink></li>
+        <li><NavLink to="/training-shop/women" data-test-id="menu-link-women">Women</NavLink></li>
+        <li><NavLink to="/training-shop/men" data-test-id="menu-link-men">Men</NavLink></li>
         <li><a href="beauty">Beauty</a></li>
         <li><a href="accessories">Accessories</a></li>
         <li><a href="blog">Blog</a></li>

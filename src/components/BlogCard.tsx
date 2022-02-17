@@ -8,7 +8,7 @@ interface BlogCardProps {
 
 const BlogCard: FC<BlogCardProps> = ({image, title, text}) => {
   return (
-    <div className='blog__card max-w-[350px]'>
+    <div className='blog__card lg:max-w-[350px] max-w-[300px]'>
 
         <img className='w-full' src={image} alt={title} />
 

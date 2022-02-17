@@ -12,7 +12,7 @@ const RelatedProd = () => {
   return (
     <section className='related pb-24 pt-[104px]'>
         <div className="container">
-            <div className="related__header flex justify-between">
+            <div className="related__header flex justify-between flex-wrap gap-y-4">
                 <h2 className="related__title text-dark font-semibold text-title2">
                     RELATED PRODUCTS
                 </h2>
@@ -22,7 +22,7 @@ const RelatedProd = () => {
                 </div>
             </div>
 
-            <div className="related__cards flex gap-x-8 justify-between pt-12">
+            <div className="related__cards flex gap-x-8 lg:justify-between justify-center flex-wrap gap-y-4 pt-12">
                 <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
                 <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
                 <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />

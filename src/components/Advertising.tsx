@@ -15,7 +15,7 @@ const handlerSubmit = (e:React.SyntheticEvent) =>{
   return (
     <section className='advertising py-24'>
         <div className="advertising__banners">
-            <div className="container flex justify-between pb-24">
+            <div className="container flex xl:justify-between justify-center flex-wrap gap-y-4 gap-x-4 pb-24">
                 <BannerCard img={girl} title='lookbook collection' subtitle='New Season'/>
                 <BannerCard img={girls} title='Get UP to ' subtitle='Sale' warning='50% off'/>
             </div>
@@ -23,7 +23,7 @@ const handlerSubmit = (e:React.SyntheticEvent) =>{
 
         <div className="advertising__offer bg-gradient-to-b from-grad-top to-grad-bottom py-[60px] relative overflow-hidden">
 
-                <div className="offer__card w-[28%] bg-white pt-20 pb-24 px-24 mx-auto text-center">
+                <div className="offer__card sm:w-[528px] w-full bg-white pt-20 pb-24 md:px-24 px-4 mx-auto text-center">
                     <div className="offer__card-subtitle text-subtitle opacity-40 uppercase font-semibold">
                          Special Offer
                     </div>
@@ -38,11 +38,11 @@ const handlerSubmit = (e:React.SyntheticEvent) =>{
                     </form>
                 </div>
 
-                <div className="offer__image-women absolute -bottom-10 left-[22.5%]">
+                <div className="offer__image-women absolute -bottom-10 xl:left-[10%] left-2 hidden md:block">
                         <img src={women} alt="women" />
                     </div>
 
-                <div className="offer__image-men absolute bottom-0 right-[25%]">
+                <div className="offer__image-men absolute bottom-0 xl:right-[10%] right-2 hidden md:block">
                         <img src={man} alt="man" />
                 </div>
 

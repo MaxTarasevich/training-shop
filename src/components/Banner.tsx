@@ -11,7 +11,7 @@ import Arrow from '../SVGcomponent/Arrow';
 
 const Banner = () => {
   return <section className="banner border-y-2 border-solid border-y-gr-white py-8">
-      <div className="container flex justify-between">
+      <div className="container flex xl:justify-between justify-center gap-y-3 flex-wrap">
         <div className="banner__main max-w-[540px] relative">
                 <img src={MainBanner} alt="main banner" />
 

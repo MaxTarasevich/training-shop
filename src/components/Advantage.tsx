@@ -10,7 +10,7 @@ import AdvantageItem from './AdvantageItem';
 const Advantage = () => {
     
   return <div className='advantage pt-8'>
-    <div className="container flex justify-between items-center">
+    <div className="container flex xl:justify-between items-center justify-center gap-4 flex-wrap">
 
         <AdvantageItem title='FREE SHIPPING' text='On all UA order or order above $100' icon={TruckImage} /> 
 

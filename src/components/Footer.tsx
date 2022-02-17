@@ -27,13 +27,13 @@ const Footer = () => {
     <footer className='footer' data-test-id="footer">
         
             <div className="footer__subscribe py-3 text-white bg-dark">
-                <div className="container flex justify-between items-center text-subtitle">
+                <div className="container flex md:justify-between items-center text-subtitle flex-wrap gap-y-2 justify-center">
                 
                     <h4 className="footer__subtitle font-semibold uppercase">
                         BE IN TOUCH WITH US:
                     </h4>
 
-                    <form className="footer__form w-[46%] flex justify-between" onSubmit={(e)=>{handlerSubmit(e)}}>
+                    <form className="footer__form md:w-[46%] w-full flex md:justify-between justify-center" onSubmit={(e)=>{handlerSubmit(e)}}>
                         <input className='w-[75%] py-2 px-4 bg-[rgba(255,255,255,0.2)]' type="email" name="email" id="email" placeholder='Enter your email' />
                         <button className='py-2 px-6 border-[1px] border-solid border-white font-semibold uppercase' type="submit">Join Us</button>
                     </form>
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__links py-10 text-subtitle text-dark">
-                <div className="container flex justify-between">
+                <div className="container flex justify-between flex-wrap gap-y-2">
                   <FooterCard title='Categories' links={Categories}/>
                   <FooterCard title='Information' links={Information} />
                   <FooterCard title='Useful links' links={UsefulLinks}/>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__info py-3 bg-[#F8F8F8] text-small font-medium text-dark text-opacity-80">
-                <div className="container flex justify-between items-center">
+                <div className="container flex justify-between items-center flex-wrap gap-y-2">
                     <div className="footer__copyright ">
                         Copyright © 2032 all rights reserved
                     </div>

@@ -27,9 +27,9 @@ import Star from '../SVGcomponent/Star'
 const ProductCard = () => {
   return (
     <section className='productCard pt-8 ' data-test-id="product-page-product">
-        <div className="container flex justify-between gap-x-8">
-            <div className="productCard__slider flex gap-x-4">
-                <div className="productCard__preview flex flex-col gap-y-4">
+        <div className="container flex xl:justify-between gap-x-8 flex-wrap justify-center gap-y-4">
+            <div className="productCard__slider flex gap-x-4 flex-wrap gap-y-6 justify-center">
+                <div className="productCard__preview flex sm:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
                     <div className="preview__control flex justify-between items-center">
                         <div className='cursor-pointer'> <Arrow /></div>
                         <div className='rotate-180 cursor-pointer'> <Arrow /></div>
@@ -43,7 +43,7 @@ const ProductCard = () => {
                    
 
                 </div>
-                <div className="productCard__image w-[448px] relative">
+                <div className="productCard__image md:w-[448px] w-[300px] relative">
                     <div className="productCard__control-main left-4 -rotate-90">
                         <Arrow />
                     </div>
@@ -87,7 +87,7 @@ const ProductCard = () => {
 
                 </div>
 
-                <div className="payment mt-8 py-8 flex items-center gap-x-4 border-solid border-t-2 border-b-2 border-[#E5E5E5]">
+                <div className="payment mt-8 py-8 flex flex-wrap gap-y-4 items-center gap-x-4 border-solid border-t-2 border-b-2 border-[#E5E5E5]">
                     <div className="payment__price mr-2 text-title2 font-bold text-dark">
                         $ 379.99
                     </div>
@@ -105,7 +105,7 @@ const ProductCard = () => {
 
                 </div>
 
-                <div className="advantages flex items-center gap-x-7 pt-9 pb-8">
+                <div className="advantages flex flex-wrap gap-y-4 items-center gap-x-7 pt-9 pb-8">
                     <div className="advantage opacity-60 text-subtitle font-medium flex items-center gap-x-2 cursor-pointer">
                         <div className="advantage__icon">
                             <Truck />
@@ -140,7 +140,7 @@ const ProductCard = () => {
                         guaranteed safe checkout
                         <span className="w-[50%] h-0.5 bg-[#E5E5E5]"></span>
                     </div>
-                    <div className="paycards__items pt-6 pb-8 flex gap-x-4 justify-between items-center">
+                    <div className="paycards__items pt-6 pb-8 flex flex-wrap gap-y-4 gap-x-4 lg:justify-between justify-center items-center">
                         <img src={pay1} alt="card" />
                         <img src={pay2} alt="card" />
                         <img src={pay3} alt="card" />

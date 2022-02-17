@@ -10,7 +10,7 @@ const AdvantageItem:React.FC<AdvantageProps> = ({text, title, icon}) => {
 
   
 
-  return  <div className="advantage__item flex items-center text-dark">
+  return  <div className="advantage__item max-w-[280px] flex items-center text-dark">
 
     <div className="advantage__item-icon w-[30px] mr-2">
       <img className='object-cover w-full' src={icon} alt="icon" />

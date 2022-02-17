@@ -9,15 +9,15 @@ interface CatalogeProps {
 }
 
 const Cataloge:React.FC<CatalogeProps> = ({title, cardData, test}) => {
-  return <section className='catalog pt-24' data-test-id={`clothes-${test}`}>
+  return <section className='catalog md:pt-24 pt-10' data-test-id={`clothes-${test}`}>
       <div className="container">
 
-          <div className="catalog__nav pb-12 flex justify-between items-center">
+          <div className="catalog__nav pb-12 flex sm:justify-between items-center flex-wrap justify-center gap-y-2">
             <h3 className='font-semibold text-title2 tracking-wider'>
                 {title}
             </h3>
 
-            <ul className="cataloge__list flex justify-between gap-x-8 text-subtitle tracking-wider text-opacity-60">
+            <ul className="cataloge__list flex sm:justify-between sm:gap-x-8 flex-wrap justify-center gap-3 text-subtitle tracking-wider text-opacity-60">
                 <li className='text-opacity-100 font-medium'><a href="NEW ARRIVALS">NEW ARRIVALS</a></li>
                 <li><a href="BESTSELLERS">SPECIALS</a></li>
                 <li><a href="BESTSELLERS">BESTSELLERS</a></li>
@@ -26,7 +26,7 @@ const Cataloge:React.FC<CatalogeProps> = ({title, cardData, test}) => {
             </ul>
           </div>
 
-          <div className="catalog__cards flex flex-wrap justify-between gap-7">
+          <div className="catalog__cards flex flex-wrap xl:justify-between justify-center gap-7">
            
            {cardData.map((i,index) => {
                return <Card image={i} key={index} title="Women's tracksuit Q109" price='$ 30.00' rate={5}/>

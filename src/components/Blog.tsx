@@ -16,7 +16,7 @@ const Blog = () => {
                 </h3>
                 <a href="blog" className="blog__button font-medium text-subtitle text-dark text-opacity-60">SEE ALL</a>
             </div>
-            <div className="blog__cards flex justify-between gap-x-8">
+            <div className="blog__cards flex lg:justify-between justify-center gap-x-8 flex-wrap">
                 <BlogCard image={img1} title={'The Easiest Way to Break'} text={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} />
                 <BlogCard image={img2} title={'Wedding Season '} text={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} />
                 <BlogCard image={img3} title={'Recent Favorites On Repeat'} text={'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor'} />

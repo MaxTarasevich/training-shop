@@ -12,8 +12,8 @@ const Main = () => {
   return (
     <>
      <Banner />
-     <Cataloge title='WOMEN’S'cardData={womanArr}/>
-     <Cataloge title='MEN’S'cardData={manArr}/>
+     <Cataloge title='WOMEN’S'cardData={womanArr} test="women"/>
+     <Cataloge title='MEN’S'cardData={manArr} test="men"/>
      <Advertising />
      <Blog />
     </>

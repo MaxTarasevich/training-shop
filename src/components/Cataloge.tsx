@@ -3,12 +3,13 @@ import React from 'react';
 import Card from './Card';
 
 interface CatalogeProps {
-    title:String;
+    title:string;
     cardData:string[];
+    test?:string;
 }
 
 const Cataloge:React.FC<CatalogeProps> = ({title, cardData}) => {
-  return <section className='catalog pt-24' data-test-id={`clothes-${title}`}>
+  return <section className='catalog pt-24' data-test-id={`clothes-${test}`}>
       <div className="container">
 
           <div className="catalog__nav pb-12 flex justify-between items-center">

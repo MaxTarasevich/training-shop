@@ -8,7 +8,7 @@ interface CatalogeProps {
     test?:string;
 }
 
-const Cataloge:React.FC<CatalogeProps> = ({title, cardData}) => {
+const Cataloge:React.FC<CatalogeProps> = ({title, cardData, test}) => {
   return <section className='catalog pt-24' data-test-id={`clothes-${test}`}>
       <div className="container">
 

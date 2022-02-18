@@ -22,8 +22,11 @@ const Navigation = () => {
       <ul className={`nav__menu lg:flex  gap-x-4 text-title4 text-dark
                       ${burger ? 'burger-open sm:text-title text-title1 font-semibold' : 'hidden'}`}
                       onClick={()=>{
-                        setBurger(!burger)
-                      }}>
+                        if(burger){
+                          setBurger(!burger)
+                        }
+                      }}
+                      data-test-id='burger-menu'>
         <li className='hover:text-error transition-colors duration-500'><a href="about">About Us</a></li>
         <li className='hover:text-error transition-colors duration-500'><NavLink to="/training-shop/women" data-test-id="menu-link-women">Women</NavLink></li>
         <li className='hover:text-error transition-colors duration-500'><NavLink to="/training-shop/men" data-test-id="menu-link-men">Men</NavLink></li>
@@ -36,7 +39,8 @@ const Navigation = () => {
       <ul className='burger relative z-50 lg:hidden w-10 flex flex-col gap-2 cursor-pointer px-1 hover:animate-pulse' 
         onClick={()=>{
           setBurger(!burger)
-        }}>
+        }}
+        dete-test-id='burger-menu-btn'>
         <li className={`h-0.5 bg-dark ${burger ? '-rotate-45 translate-y-[10px]' : ''}`}></li>
         <li className={`h-0.5 ${burger ? 'bg-white' : 'bg-dark'}`}></li>
         <li className={`h-0.5 bg-dark  ${burger ? 'rotate-45 -translate-y-[10px]' : ''} `}></li>

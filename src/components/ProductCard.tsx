@@ -27,10 +27,10 @@ import Star from '../SVGcomponent/Star'
 const ProductCard = () => {
   return (
     <section className='productCard pt-8 ' data-test-id="product-page-product">
-        <div className="container flex xl:justify-between gap-x-8 flex-wrap justify-center gap-y-4">
-            <div className="productCard__slider flex gap-x-4 flex-wrap gap-y-6 justify-center">
-                <div className="productCard__preview flex sm:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
-                    <div className="preview__control flex justify-between items-center">
+        <div className="container flex xl:justify-between gap-x-8 lg:flex-nowrap flex-wrap justify-center gap-y-4">
+            <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center">
+                <div className="productCard__preview flex lg:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
+                    <div className="preview__control lg:flex hidden justify-between items-center">
                         <div className='cursor-pointer'> <Arrow /></div>
                         <div className='rotate-180 cursor-pointer'> <Arrow /></div>
                        

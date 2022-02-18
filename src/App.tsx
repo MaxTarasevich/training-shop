@@ -8,6 +8,7 @@ import ProductPage from './pages/ProductPage';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/training-shop/men" element={<MenPage />} />
         <Route path="/training-shop/women" element={<WomenPage />} />
         <Route path="/training-shop/product" element={<ProductPage />} />
+        <Route path='*' element={<PageNotFound />}/>
       </Routes>
 
       <Footer />

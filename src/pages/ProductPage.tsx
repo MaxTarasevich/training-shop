@@ -12,11 +12,11 @@ const cardInfo = {
 
 const ProductPage = () => {
   return (
-      <div data-test-id="product-page-/training-shop/product"> 
+      <> 
       <Panel title="Women's tracksuit Q109" path='/training-shop/women' cardInfo={cardInfo} />
       <ProductCard />
       <RelatedProd />
-      </div>
+      </>
    
   )
 }

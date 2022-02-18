@@ -33,9 +33,9 @@ const Footer = () => {
                         BE IN TOUCH WITH US:
                     </h4>
 
-                    <form className="footer__form md:w-[46%] w-full flex md:justify-between justify-center" onSubmit={(e)=>{handlerSubmit(e)}}>
+                    <form className="footer__form md:w-[46%] w-full flex  justify-center" onSubmit={(e)=>{handlerSubmit(e)}}>
                         <input className='w-[75%] py-2 px-4 bg-[rgba(255,255,255,0.2)]' type="email" name="email" id="email" placeholder='Enter your email' />
-                        <button className='py-2 px-6 border-[1px] border-solid border-white font-semibold uppercase' type="submit">Join Us</button>
+                        <button className='py-2 lg:px-6 px-3 border-[1px] border-solid border-white font-semibold uppercase' type="submit">Join Us</button>
                     </form>
 
                     <SocialLinks />
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
 
             <div className="footer__links py-10 text-subtitle text-dark">
-                <div className="container flex justify-between flex-wrap gap-y-2">
+                <div className="container flex lg:justify-between justify-center flex-wrap gap-y-2">
                   <FooterCard title='Categories' links={Categories}/>
                   <FooterCard title='Information' links={Information} />
                   <FooterCard title='Useful links' links={UsefulLinks}/>

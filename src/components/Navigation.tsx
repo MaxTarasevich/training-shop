@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Logo from '../assets/icons/main/Logo.svg'
 
@@ -10,20 +10,36 @@ import Bag from '../SVGcomponent/Bag';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
+  const [burger, setBurger] = useState<boolean>(false)
+
+
   return <nav className='nav' data-test-id="menu">
-    <div className="container pb-5 pt-4  flex lg:justify-between justify-center flex-wrap gap-4">
+    <div className="container pb-5 pt-4  flex sm:justify-between justify-evenly flex-wrap gap-4">
       <Link className='nav__logo' to="/training-shop" data-test-id="header-logo-link">
         <img src={Logo} alt="Logo" />
       </Link>
 
-      <ul className='nav__menu flex gap-x-4 justify-center flex-wrap gap-y-3  text-title4 text-dark'>
-        <li><a href="about">About Us</a></li>
-        <li><NavLink to="/training-shop/women" data-test-id="menu-link-women">Women</NavLink></li>
-        <li><NavLink to="/training-shop/men" data-test-id="menu-link-men">Men</NavLink></li>
-        <li><a href="beauty">Beauty</a></li>
-        <li><a href="accessories">Accessories</a></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="contact">Contact</a></li>
+      <ul className={`nav__menu lg:flex  gap-x-4 text-title4 text-dark
+                      ${burger ? 'burger-open sm:text-title text-title1 font-semibold' : 'hidden'}`}
+                      onClick={()=>{
+                        setBurger(!burger)
+                      }}>
+        <li className='hover:text-error transition-colors duration-500'><a href="about">About Us</a></li>
+        <li className='hover:text-error transition-colors duration-500'><NavLink to="/training-shop/women" data-test-id="menu-link-women">Women</NavLink></li>
+        <li className='hover:text-error transition-colors duration-500'><NavLink to="/training-shop/men" data-test-id="menu-link-men">Men</NavLink></li>
+        <li className='hover:text-error transition-colors duration-500'><a href="beauty">Beauty</a></li>
+        <li className='hover:text-error transition-colors duration-500'><a href="accessories">Accessories</a></li>
+        <li className='hover:text-error transition-colors duration-500'><a href="blog">Blog</a></li>
+        <li className='hover:text-error transition-colors duration-500'><a href="contact">Contact</a></li>
+      </ul>
+
+      <ul className='burger relative z-50 lg:hidden w-10 flex flex-col gap-2 cursor-pointer px-1 hover:animate-pulse' 
+        onClick={()=>{
+          setBurger(!burger)
+        }}>
+        <li className={`h-0.5 bg-dark ${burger ? '-rotate-45 translate-y-[10px]' : ''}`}></li>
+        <li className={`h-0.5 ${burger ? 'bg-white' : 'bg-dark'}`}></li>
+        <li className={`h-0.5 bg-dark  ${burger ? 'rotate-45 -translate-y-[10px]' : ''} `}></li>
       </ul>
 
       <ul className="nav__icons flex space-x-5">

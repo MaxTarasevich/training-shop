@@ -28,6 +28,9 @@
   .size__item{
     @apply w-10 h-10 my-4 bg-gr-white flex justify-center items-center cursor-pointer;
   }
+  .burger-open{
+    @apply flex flex-col gap-y-5 items-center justify-evenly z-50 top-0 left-0 pt-[15%]  fixed w-full bg-white-800 min-h-screen ;
+  }
 }
 
 @font-face {

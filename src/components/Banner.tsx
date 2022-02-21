@@ -7,31 +7,14 @@ import bannerWomen from '../assets/images/main__banner-women.jpg';
 import bannerMen from '../assets/images/main__banner-men.jpg';
 import bannerAccess from '../assets/images/main__banner-accessories.jpg';
 
-import Arrow from '../SVGcomponent/Arrow';
+
+import MainSlider from './MainSlider';
 
 const Banner = () => {
   return <section className="banner border-y-2 border-solid border-y-gr-white py-8">
-      <div className="container flex xl:justify-between justify-center gap-y-3 flex-wrap">
-        <div className="banner__main max-w-[540px] relative">
-                <img src={MainBanner} alt="main banner" />
-
-                <div className="banner__title min-w-[53%]">
-                    <span className='mb-4 text-subtitle text-dark-shadow'>
-                        Banner
-                    </span>
-                    <h3 className='text-title2'>
-                        your Title text 
-                    </h3>
-                </div>
-
-                <div className="banner__main-arrows rotate-90">
-                     <Arrow />
-                </div>
-
-                <div className="banner__main-arrows left-6 -rotate-90">
-                    <Arrow />
-                </div>  
-        </div>
+      <div className="container flex xl:justify-between justify-center gap-y-3 gap-x-3 flex-wrap">
+        
+        <MainSlider slides={[MainBanner, bannerMen,bannerWomen,bannerAccess]} />
 
         <div className="banner__aside max-w-[540px] flex flex-wrap justify-between">
 

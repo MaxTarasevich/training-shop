@@ -40,7 +40,7 @@ const Navigation = () => {
         onClick={()=>{
           setBurger(!burger)
         }}
-        dete-test-id='burger-menu-btn'>
+        data-test-id='burger-menu-btn'>
         <li className={`h-0.5 bg-dark ${burger ? '-rotate-45 translate-y-[10px]' : ''}`}></li>
         <li className={`h-0.5 ${burger ? 'bg-white' : 'bg-dark'}`}></li>
         <li className={`h-0.5 bg-dark  ${burger ? 'rotate-45 -translate-y-[10px]' : ''} `}></li>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Arrow from '../SVGcomponent/Arrow'
+
 
 import preview1 from '../assets/images/productCard/preview1.jpg'
 import main from '../assets/images/productCard/main.jpg'
@@ -31,34 +31,6 @@ const ProductCard = () => {
         <div className="container flex xl:justify-between gap-x-8 xl:flex-nowrap flex-wrap justify-center gap-y-4">
 
             <ProductCardSlider images={preview1} mainImage={main} />
-
-            {/** 
-            <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center">
-                <div className="productCard__preview flex lg:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
-                    <div className="preview__control lg:flex hidden justify-between items-center">
-                        <div className='cursor-pointer'> <Arrow /></div>
-                        <div className='rotate-180 cursor-pointer'> <Arrow /></div>
-                       
-                    </div>      
-                
-                    <img src={preview1} alt="preview" />
-                    <img src={preview1} alt="preview" />
-                    <img src={preview1} alt="preview" />
-                    <img src={preview1} alt="preview" /> 
-
-                </div>
-                <div className="productCard__image md:w-[448px] w-[300px] relative">
-                    <div className="productCard__control-main left-4 -rotate-90">
-                        <Arrow />
-                    </div>
-                    <div className="productCard__control-main right-4 rotate-90 ">
-                        <Arrow />
-                    </div>   
-                    <img className='w-full' src={main} alt="preview" />
-                </div>
-
-            </div>
-            */}
 
             <div className="productCard__info min-w-[46%] text-dark">
                 <div className="properties">

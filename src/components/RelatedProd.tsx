@@ -19,7 +19,7 @@ const RelatedProd = () => {
 
   return (
     <section className='related pb-24 pt-[104px]'>
-        <div  className="container">
+        <div  className="container" data-test-id='related-slider'>
 
           
 

@@ -20,7 +20,8 @@ const ProductCardSlider: FC<ProductCardSliderProps> = ({images, mainImage}) => {
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center">
+    <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center" 
+    data-test-id='product-slider'>
     <div className="productCard__preview flex md:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
         <div className="preview__control md:flex hidden justify-between items-center">
             <div className='preview__next cursor-pointer'> <Arrow /></div>

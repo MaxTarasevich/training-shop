@@ -13,7 +13,8 @@ interface MainSliderProps{
 
 const MainSlider: FC<MainSliderProps> = ({slides}) => {
   return (
-    <div className="banner__main md:max-w-[540px] max-w-[90%] min-h-[490px] relative">
+    <div className="banner__main md:max-w-[540px] max-w-[90%] min-h-[490px] relative" 
+     data-test-id='main-slider'>
              
                 <Swiper
                     className='relative '

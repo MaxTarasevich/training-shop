@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Logo from '../assets/icons/main/Logo.svg'
 
@@ -11,6 +11,19 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const [burger, setBurger] = useState<boolean>(false)
+
+  useEffect(() => {
+
+    if(burger){
+      document.body.style.overflowY = 'hidden'
+      console.log('1')
+    }else{
+      document.body.style.overflowY = ''
+      console.log('2')
+    }
+    
+  }, )
+  
 
 
   return <nav className='nav' data-test-id="menu">

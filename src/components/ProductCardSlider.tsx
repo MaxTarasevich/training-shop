@@ -42,6 +42,29 @@ const ProductCardSlider: FC<ProductCardSliderProps> = ({images, mainImage}) => {
          direction={'vertical'}
          watchSlidesProgress 
          onSwiper={setThumbsSwiper} 
+         breakpoints={
+             { 
+                768:{
+                direction:'vertical',
+                slidesPerView:4,
+                slidesPerGroup:4,
+                spaceBetween:0
+                },
+               551:{
+                direction:'horizontal',
+                slidesPerView:4,
+                slidesPerGroup:4,
+                spaceBetween:5
+               },
+               320:{
+                direction:'horizontal',
+                slidesPerView:3,
+                slidesPerGroup:3,
+                spaceBetween:5
+                },
+               
+             }
+         }
          >
              <SwiperSlide className='cursor-pointer opacity-50'> <img className='preview__image' src={images} alt="preview" /></SwiperSlide>
              <SwiperSlide className='cursor-pointer opacity-50'> <img className='preview__image' src={images} alt="preview" /></SwiperSlide>

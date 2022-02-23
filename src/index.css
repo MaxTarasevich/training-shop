@@ -82,7 +82,25 @@
 
 .productCard__preview .swiper .swiper-wrapper{
  min-width: 94px;
- max-height: 500px;
+max-height: 500px;
+
+}
+
+
+
+@media (max-width:850px){
+  .productCard__preview .swiper .swiper-wrapper{
+  max-width: 520px;
+  padding: 0 20px;
+}
+}
+
+
+@media (max-width:550px){
+  .productCard__preview .swiper .swiper-wrapper{
+  max-width: 320px;
+  padding: 0 10px;
+}
 }
 
 .swiper-slide-thumb-active{

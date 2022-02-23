@@ -23,11 +23,16 @@ import pay5 from '../assets/images/productCard/pay5.png'
 import pay6 from '../assets/images/productCard/pay6.png'
 import pay7 from '../assets/images/productCard/pay7.png'
 import Star from '../SVGcomponent/Star'
+import ProductCardSlider from './ProductCardSlider'
 
 const ProductCard = () => {
   return (
     <section className='productCard pt-8 ' data-test-id="product-page-product">
-        <div className="container flex xl:justify-between gap-x-8 lg:flex-nowrap flex-wrap justify-center gap-y-4">
+        <div className="container flex xl:justify-between gap-x-8 xl:flex-nowrap flex-wrap justify-center gap-y-4">
+
+            <ProductCardSlider images={preview1} mainImage={main} />
+
+            {/** 
             <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center">
                 <div className="productCard__preview flex lg:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
                     <div className="preview__control lg:flex hidden justify-between items-center">
@@ -39,8 +44,7 @@ const ProductCard = () => {
                     <img src={preview1} alt="preview" />
                     <img src={preview1} alt="preview" />
                     <img src={preview1} alt="preview" />
-                    <img src={preview1} alt="preview" />
-                   
+                    <img src={preview1} alt="preview" /> 
 
                 </div>
                 <div className="productCard__image md:w-[448px] w-[300px] relative">
@@ -54,6 +58,7 @@ const ProductCard = () => {
                 </div>
 
             </div>
+            */}
 
             <div className="productCard__info min-w-[46%] text-dark">
                 <div className="properties">

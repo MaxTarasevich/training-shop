@@ -26,7 +26,6 @@ const MainSlider: FC<MainSliderProps> = ({slides}) => {
                             prevEl:'.banner__main-arrows-prev'
                         }
                     }
-                    
                     >
                         {slides.map((el,index) => {
                             return  <SwiperSlide className='cursor-pointer'

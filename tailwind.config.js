@@ -33,7 +33,7 @@ module.exports = {
       'grad-top':'#F3F2F2',
       'grad-bottom':'#DCDBDB',
 
-    }
+    },
   },
   plugins: [],
 }

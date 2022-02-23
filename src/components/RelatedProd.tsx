@@ -43,57 +43,70 @@ const RelatedProd = () => {
                             prevEl:'.related-next'
                         }
                     }
-                    slidesPerGroup={2}
+                    slidesPerGroup={2} 
+                    breakpoints={
+                        {
+                        320:{
+                            slidesPerView:1,
+                            slidesPerGroup:1,
+                            spaceBetween:0
+                        },
+                        560:{
+                            slidesPerView:2,
+                            slidesPerGroup:2,
+                            spaceBetween:0
+                        },
+                        750:{
+                            slidesPerView:3,
+                            slidesPerGroup:3,
+                            spaceBetween:0
+                        },
+                        1000:{
+                            slidesPerView:4,
+                            slidesPerGroup:4,
+                            spaceBetween:0
+                        }
+                    }
+                    }
             >
 
-            <SwiperSlide>
-                <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </SwiperSlide>
+                <SwiperSlide >
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                </SwiperSlide>
            
-
-            {/*
-             <div className="related__cards flex gap-x-8 lg:justify-between justify-center flex-wrap gap-y-4 pt-12">
-                <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-                <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-                <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-                <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
-            </div>
-             */}
-           
-
             </Swiper>
             
         </div>

@@ -18,9 +18,9 @@ while (rate) {
     rate--
 }
 
-  return <Link className='card block text-body' to='/training-shop/product' data-test-id='clothes-card-product'>
+  return <Link className='card block text-body px-5' to='/training-shop/product' data-test-id='clothes-card-product'>
         <div className="card__image">
-            <img src={image} alt="" />
+            <img className='mx-auto min-w-[80%]' src={image} alt="cards" />
         </div>
         <h4 className="card__title pt-4 font-normal opacity-60">
             {title}

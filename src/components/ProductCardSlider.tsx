@@ -20,9 +20,8 @@ const ProductCardSlider: FC<ProductCardSliderProps> = ({images, mainImage}) => {
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center" 
-    data-test-id='product-slider'>
-    <div className="productCard__preview flex md:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
+    <div className="productCard__slider flex gap-x-4 lg:flex-nowrap lg:items-start items-center flex-wrap gap-y-6 justify-center" >
+    <div  className="productCard__preview flex md:flex-col flex-wrap justify-center gap-x-4 gap-y-4">
         <div className="preview__control md:flex hidden justify-between items-center">
             <div className='preview__next cursor-pointer'> <Arrow /></div>
             <div className='preview__prev rotate-180 cursor-pointer'> <Arrow /></div>
@@ -78,7 +77,7 @@ const ProductCardSlider: FC<ProductCardSliderProps> = ({images, mainImage}) => {
     
 
     </div>
-    <div className="productCard__image md:w-[448px] w-[300px] relative">
+    <div className="productCard__image md:w-[448px] w-[300px] relative" data-test-id='product-slider'>
         <div className="productCard__control product-prev left-4 -rotate-90">
             <Arrow />
         </div>
@@ -92,8 +91,8 @@ const ProductCardSlider: FC<ProductCardSliderProps> = ({images, mainImage}) => {
          slidesPerView={1}
          navigation={
              {
-                 nextEl:'.product-prev',
-                 prevEl:'.product-next'
+                 nextEl:'.product-next',
+                 prevEl:'.product-prev'
              }
          }  
          thumbs={{ swiper: thumbsSwiper }}

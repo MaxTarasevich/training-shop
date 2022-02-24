@@ -19,7 +19,7 @@ const RelatedProd = () => {
 
   return (
     <section className='related pb-24 pt-[104px]'>
-        <div  className="container" data-test-id='related-slider'>
+        <div  className="container" >
 
           
 
@@ -33,7 +33,7 @@ const RelatedProd = () => {
                 </div>
             </div>
            
-            <Swiper  className='relative'
+            <Swiper  className='relative' data-test-id='related-slider'
                     modules={[Navigation,]}
                     spaceBetween={20}
                     slidesPerView={4}

@@ -27,7 +27,7 @@ import ProductCardSlider from './ProductCardSlider'
 
 const ProductCard = () => {
   return (
-    <section className='productCard pt-8 ' data-test-id="product-page-product">
+    <section className='productCard pt-8 '>
         <div className="container flex xl:justify-between gap-x-8 xl:flex-nowrap flex-wrap justify-center gap-y-4">
 
             <ProductCardSlider images={preview1} mainImage={main} />

@@ -9,7 +9,7 @@ interface CatalogeProps {
 }
 
 const Cataloge:React.FC<CatalogeProps> = ({title, cardData, test}) => {
-  return <section className='catalog md:pt-24 pt-10' data-test-id={`clothes-${test}`}>
+  return <section className='catalog md:pt-24 pt-10'>
       <div className="container">
 
           <div className="catalog__nav pb-12 flex sm:justify-between items-center flex-wrap justify-center gap-y-2">

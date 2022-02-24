@@ -29,7 +29,7 @@ const Cataloge:React.FC<CatalogeProps> = ({title, cardData, test}) => {
           <div className="catalog__cards flex flex-wrap xl:justify-between justify-center gap-7">
            
            {cardData.map((i,index) => {
-               return <Card image={i} key={index} title="Women's tracksuit Q109" price='$ 30.00' rate={5}/>
+               return <Card image={i} key={index} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={test}/>
            })}
           </div>
 

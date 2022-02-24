@@ -8,9 +8,10 @@ interface CardProps {
     title:string;
     price:string;
     rate:number;
+    dataTest?:string;
 }
 
-const Card:React.FC<CardProps> = ({image, title, price, rate}) => {
+const Card:React.FC<CardProps> = ({image, title, price, rate, dataTest}) => {
 
 let stars:number[] = []
 while (rate) {
@@ -18,7 +19,7 @@ while (rate) {
     rate--
 }
 
-  return <Link className='card block text-body' to='/training-shop/product' data-test-id='clothes-card-men'>
+  return <Link className='card block text-body' to='/training-shop/product' data-test-id={`clothes-card-${dataTest}`}>
         <div className="card__image">
             <img className='mx-auto min-w-[80%]' src={image} alt="cards" />
         </div>

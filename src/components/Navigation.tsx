@@ -16,10 +16,8 @@ const Navigation = () => {
 
     if(burger){
       document.body.style.overflowY = 'hidden'
-      console.log('1')
     }else{
       document.body.style.overflowY = ''
-      console.log('2')
     }
     
   }, )

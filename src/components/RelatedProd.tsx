@@ -54,57 +54,57 @@ const RelatedProd = () => {
                         560:{
                             slidesPerView:2,
                             slidesPerGroup:1,
-                            spaceBetween:0
+                            spaceBetween:2
                         },
                         750:{
                             slidesPerView:3,
                             slidesPerGroup:1,
-                            spaceBetween:0
+                            spaceBetween:5
                         },
                         1000:{
                             slidesPerView:4,
                             slidesPerGroup:1,
-                            spaceBetween:0
+                            spaceBetween:20
                         }
                     }
                     }
             >
 
                 <SwiperSlide >
-                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img4} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img3} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img2} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} />
+                    <Card image={img1} title="Women's tracksuit Q109" price='$ 30.00' rate={5} dataTest={'women'}/>
                 </SwiperSlide>
            
             </Swiper>

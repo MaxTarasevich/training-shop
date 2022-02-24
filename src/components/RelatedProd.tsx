@@ -39,8 +39,8 @@ const RelatedProd = () => {
                     slidesPerView={4}
                     navigation={
                         {
-                            nextEl:'.related-prev',
-                            prevEl:'.related-next'
+                            nextEl:'.related-next',
+                            prevEl:'.related-prev'
                         }
                     }
                     slidesPerGroup={2} 

@@ -19,7 +19,7 @@ while (rate) {
     rate--
 }
 
-  return <Link className='card block text-body' to='/training-shop/product' data-test-id={`clothes-card-${dataTest}`}>
+  return <Link className='card block text-body' to='/training-shop/product'  data-test-id={`clothes-card-${dataTest ? dataTest: ''}`}>
         <div className="card__image">
             <img className='mx-auto min-w-[80%]' src={image} alt="cards" />
         </div>

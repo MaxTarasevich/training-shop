@@ -43,7 +43,7 @@ const RelatedProd = () => {
                             prevEl:'.related-prev'
                         }
                     }
-                    slidesPerGroup={2} 
+                    slidesPerGroup={1} 
                     breakpoints={
                         {
                         320:{
@@ -53,17 +53,17 @@ const RelatedProd = () => {
                         },
                         560:{
                             slidesPerView:2,
-                            slidesPerGroup:2,
+                            slidesPerGroup:1,
                             spaceBetween:0
                         },
                         750:{
                             slidesPerView:3,
-                            slidesPerGroup:3,
+                            slidesPerGroup:1,
                             spaceBetween:0
                         },
                         1000:{
                             slidesPerView:4,
-                            slidesPerGroup:4,
+                            slidesPerGroup:1,
                             spaceBetween:0
                         }
                     }

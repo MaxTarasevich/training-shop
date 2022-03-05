@@ -4,7 +4,7 @@ import Card from './Card';
 import Loading from '../assets/images/Square-Loading.png'
 
 interface  CardsProps {
-    cardData:string[];
+    cardData:any;
 }
 
 const Cards: FC<CardsProps> = ({cardData}) => {
@@ -12,8 +12,8 @@ const Cards: FC<CardsProps> = ({cardData}) => {
     <section className='cards'>
         <div className="container flex flex-wrap lg:justify-between justify-center gap-7 pb-12">
             {
-                cardData.map((card, index) => {
-                    return <Card key={index} image={card} title="Women's tracksuit Q109" price='30' rate={5} />
+                cardData.map((i:any, index: React.Key | null | undefined) => {
+                    return <Card image={`https://training.cleverland.by/shop${i.images[0].url}`} key={index} title={i.name} price={i.price} rate={i.rating} />
                 })
             }
         </div>

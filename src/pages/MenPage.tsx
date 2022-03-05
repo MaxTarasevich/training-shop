@@ -3,14 +3,14 @@ import Cards from '../components/Cards'
 import Filter from '../components/Filter'
 import Panel from '../components/Panel'
 
-import data from '../data/men_card'
+import products from "../data/products"
 
 const MenPage = () => {
   return (
     <> 
      <Panel title='men' path='/training-shop/men'/>
      <Filter />
-     <Cards cardData={data} />
+     <Cards cardData={products.men} />
     </>
    
   )

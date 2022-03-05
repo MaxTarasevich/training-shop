@@ -3,7 +3,7 @@ import Cards from '../components/Cards'
 import Filter from '../components/Filter'
 import Panel from '../components/Panel'
 
-import data from '../data/women_card'
+import products from "../data/products"
 
 
 const WomenPage = () => {
@@ -11,7 +11,7 @@ const WomenPage = () => {
     <> 
     <Panel title='Women' path='/training-shop/women'/>
     <Filter />
-    <Cards cardData={data} />
+    <Cards cardData={products.women} />
     </>
    
   )

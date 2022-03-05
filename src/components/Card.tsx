@@ -20,15 +20,15 @@ while (rate) {
 }
 
   return <Link className='card block text-body' to='/training-shop/product'  data-test-id={`clothes-card-${dataTest ? dataTest: ''}`}>
-        <div className="card__image">
-            <img className='mx-auto min-w-[80%]' src={image} alt="cards" />
+        <div className="card__image w-[255px] h-[318px]">
+            <img className='mx-auto min-w-full object-cover object-top max-h-full' src={image} alt="cards" />
         </div>
         <h4 className="card__title pt-4 font-normal opacity-60">
             {title}
         </h4>
         <div className="card__content flex justify-between pt-3">
             <div className="card__price font-bold">
-                {price}
+                ${price}
             </div>
             <div className="card__rate flex">
                {stars.map((i:number) => {

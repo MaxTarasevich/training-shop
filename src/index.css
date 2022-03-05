@@ -31,7 +31,9 @@
   .burger-open{
     @apply flex flex-col gap-y-5 items-center justify-evenly z-50 top-0 left-0 pt-[15%]  fixed w-full bg-white-800 min-h-screen ;
   }
-  
+  .clicked{
+    @apply text-opacity-100 font-medium;
+  }
 }
 
 @font-face {
